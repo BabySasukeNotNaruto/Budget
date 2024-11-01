@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('./gif.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.income-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.income-input label {
+  margin-right: 10px;
+}
+
+.App {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  color: #ffa825;
+}
+
+h1, h2 {
+  color: #ffa825;
+  text-align: center;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
+  border: 2px solid #ffa825;
+  border-radius: 4px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #ffa825;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #d1830d;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.expense-item {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 5px 0;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expense-details {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.expense-details span {
+  flex: 1;
+  text-align: center;
+}
+
+.importance {
+  font-weight: bold;
+}
+
+label {
+  color: #ffa825;
+  text-align: center;
+}
+
+.pie-chart-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
